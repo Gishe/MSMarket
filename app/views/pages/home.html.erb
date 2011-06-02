@@ -1,0 +1,8 @@
+ <h1>Maple Market</h1>
+
+  <p>
+    Welcome <%= current_user.UserName if signed_in? %> to Maple Market.
+  </p>
+
+<%= render "not_logged_in" if not signed_in? %>
+<%= render "logged_in" if signed_in? %>

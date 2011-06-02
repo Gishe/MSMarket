@@ -1,0 +1,13 @@
+<% if current_user.admin? %>
+    <li>
+      <% link_to "Create World" %>
+    </li>
+<% end %>
+<li>
+      <%= link_to "Worlds", worlds_path %>
+</li>
+<li>
+
+  <%= link_to "My Characters", my_characters_path %>
+
+</li>
